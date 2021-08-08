@@ -3,6 +3,7 @@
 */
 html, body {
     margin: 0;
+    background-color: #e9f8f3;
 }
 
 /* Media Query for Mobile Devices */
@@ -11,6 +12,17 @@ html, body {
         width: 100vw;
         height: auto;
         margin-bottom: -5px;
+    }
+    .promo-banner h3{
+        text-align: center;
+        background-color: #9f9cc0;
+        margin: 0;
+        padding: 10px;
+        color: #e9f8f3;
+    }
+    .promo-banner a {
+        text-decoration: none;
+        color: black;
     }
     nav {
         border-top-style: solid;
