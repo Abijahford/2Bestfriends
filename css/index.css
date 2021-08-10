@@ -18,9 +18,24 @@ html, body {
         height: auto;
         margin-bottom: -5px;
     }
+    iframe {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 400px;
+    }
     .mid-portion {
         display: flex;
         flex-direction: column;
+    }
+    .service-area {
+        margin: 20px 10px 20px 10px;
+        border-top-style: solid;
+        border-top-color: #9f9cc0;
+        border-top-width: 4px;
+        border-bottom-style: solid;
+        border-bottom-color: #9f9cc0;
+        border-bottom-width: 4px;
     }
     .contact-reclaim {
         margin: 10px;
