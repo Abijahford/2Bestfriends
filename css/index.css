@@ -1,10 +1,14 @@
 /* Colors: Purple - #9f9cc0
            Green -  #cce1c3
 */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Concert+One&family=Kavoon&display=swap');
 html, body {
     margin: 0;
-    background-color: #e9f8f3;
+    background-color: #cce1c3;
     font-family: 'Brush Script MT', cursive;
+}
+.images {
+    margin: 10px;
 }
 
 /* Media Query for Mobile Devices */
@@ -14,12 +18,41 @@ html, body {
         height: auto;
         margin-bottom: -5px;
     }
+    .mid-portion {
+        display: flex;
+        flex-direction: column;
+    }
+    .happy-contact {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    .first {
+        padding:10px 30px;
+        outline: none;
+        background-color: #9f9cc0;
+        border: none;
+        border-radius:5px;
+        box-shadow: 0 9px black;
+      }
+      
+      .first:hover{
+        background-color: #e9f8f3;
+        color: #9f9cc0;
+      }
+      
+      .first:active {
+        background-color: #e9f8f3;
+        box-shadow: 0 5px black;
+        transform: translateY(4px);
+      }
     .promo-banner h3{
         text-align: center;
         background-color: #9f9cc0;
         margin: 0;
         padding: 10px;
         color: #e9f8f3;
+        font-weight: lighter;
     }
     .promo-banner a {
         text-decoration: none;
