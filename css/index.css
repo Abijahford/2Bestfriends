@@ -76,10 +76,6 @@ html, body {
     position: relative;
     display: inline-block;
   }
-  
-  button {
-      -webkit-appearance: none;
-  }
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
