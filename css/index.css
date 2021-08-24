@@ -19,6 +19,15 @@ body {
     height: auto;
     margin-bottom: -5px;
   }
+  .flexin {
+    display: flex;
+  }
+  .flexin a {
+    margin: 5px;
+  }
+  .contact a {
+    margin: 5px;
+  }
   footer {
     display: flex;
     justify-content: space-evenly;
@@ -30,6 +39,7 @@ body {
     border-bottom-width: 4px;
     margin-top: 30px;
     padding-bottom: 20px;
+    align-items: center;
   }
   footer .contact {
     display: flex;
@@ -54,7 +64,7 @@ body {
     flex-direction: column;
   }
   .service-area {
-    margin: 20px 10px 20px 10px;
+    margin: 10px 10px 20px 10px;
     border-top-style: solid;
     border-top-color: #9f9cc0;
     border-top-width: 4px;
