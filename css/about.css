@@ -30,6 +30,7 @@ body {
 .both p {
   margin-top: auto;
   margin-bottom: auto;
+  padding: 10px;
 }
 p {
   padding-left: 8px;
@@ -55,6 +56,7 @@ p {
 .melina p {
   margin-top: auto;
   margin-bottom: auto;
+  padding: 10px;
 }
 .abby {
   width: 97%;
@@ -73,6 +75,7 @@ p {
 .abby p {
   margin-top: auto;
   margin-bottom: auto;
+  padding: 10px;
 }
 /* Media Query for Mobile Devices */
 @media (max-width: 767px) {
