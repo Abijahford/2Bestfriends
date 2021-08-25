@@ -17,6 +17,7 @@ body {
   width: 50%;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+  border-left: 4px solid #9f9cc0;
 }
 .both {
   display: flex;
@@ -24,8 +25,9 @@ body {
   width: 97%;
   margin-left: auto;
   margin-right: auto;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #9f9cc0;
 }
 .both p {
   margin-top: auto;
@@ -47,11 +49,14 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #9f9cc0;
 }
 .melina img {
   width: 50%;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+  border-right: 4px solid #9f9cc0;
 }
 .melina p {
   margin-top: auto;
@@ -66,11 +71,14 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #9f9cc0;
 }
 .abby img {
   width: 50%;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+  border-left: 4px solid #9f9cc0;
 }
 .abby p {
   margin-top: auto;
