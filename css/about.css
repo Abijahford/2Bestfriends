@@ -2,6 +2,7 @@
            Green -  #cce1c3
 */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Concert+One&family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Patua+One&display=swap');
 html,
 body {
   margin: 0;
@@ -11,9 +12,73 @@ body {
 .images {
   margin: 10px;
 }
-
+.both img {
+  display: block;
+  width: 40%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.both {
+  display: flex;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.both p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+p {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 0.8em;
+  font-family: 'Patua One', cursive;
+}
+.melina {
+  width: 97%;
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.melina img {
+  width: 50%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.melina p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.abby {
+  width: 97%;
+  display: flex;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.abby img {
+  width: 50%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.abby p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 767px) {
+  .both p {
+    padding: 10px;
+  }
   .logo-banner img {
     width: 100vw;
     height: auto;
@@ -185,6 +250,15 @@ body {
 }
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .both {
+    height: 400px;
+  }
+  .abby {
+    height: 400px;
+  }
+  .melina {
+    height: 400px;
+  }
   .logo-banner img {
     width: 100%;
     height: 100%;
@@ -339,14 +413,29 @@ body {
       'logo logo navbar';
   }
   .mid-portion {
+    padding-top: 10px;
+    padding-bottom: 30px;
     display: grid;
-    grid-area: mid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
-      'tt t t'
-      'mm mm mm'
-      'bb bb b';
+      'top top'
+      'botlef botrig';
+  }
+  .disappear {
+    display: none;
+  }
+  .both {
+    grid-area: top;
+    height: 400px;
+  }
+  .abby {
+    grid-area: botrig;
+    height: 350px;
+  }
+  .melina {
+    grid-area: botlef;
+    height: 350px;
   }
   .one {
     grid-area: t;
@@ -449,6 +538,9 @@ body {
     width: 100%;
     height: 100%;
   }
+  .disappear {
+    display: none;
+  }
   .promo-banner h3 {
     text-align: center;
     display: flex;
@@ -502,6 +594,7 @@ body {
     border-bottom-color: #9f9cc0;
     border-bottom-width: 4px;
     align-items: center;
+    margin-top: 137px;
   }
   footer .contact {
     display: flex;
@@ -589,7 +682,7 @@ body {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 45vh 200vh 45vh;
+    grid-template-rows: 45vh auto 45vh;
     grid-template-areas:
       'top top top'
       'mid mid mid'
@@ -607,14 +700,31 @@ body {
       'logo logo navbar';
   }
   .mid-portion {
+    padding-top: 10px;
     display: grid;
-    grid-area: mid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
-      'tt t t'
-      'mm mm mm'
-      'bb bb b';
+      'top top'
+      'botlef botrig';
+  }
+
+  .both {
+    grid-area: top;
+    height: 550px;
+  }
+  .abby {
+    grid-area: botrig;
+  }
+  .melina {
+    grid-area: botlef;
+  }
+  p {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 0.9em;
+    font-family: 'Patua One', cursive;
   }
   .one {
     grid-area: t;
@@ -711,6 +821,7 @@ body {
   }
   .promo-banner {
     grid-area: banner;
+    z-index: 3;
   }
   .navbar {
     grid-area: navbar;
