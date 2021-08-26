@@ -2,6 +2,7 @@
            Green -  #cce1c3
 */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Concert+One&family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Patua+One&display=swap');
 html,
 body {
   margin: 0;
@@ -26,7 +27,7 @@ body {
 .quote {
   padding: 2em;
   border-radius: 0.5em;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
   border-bottom: 4px solid #9f9cc0;
   border-right: 4px solid #9f9cc0;
 }
