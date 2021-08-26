@@ -14,20 +14,23 @@ body {
 }
 .both img {
   display: block;
-  width: 50%;
-  border-bottom-left-radius: 10px;
+  width: 100%;
+  height: auto;
   border-top-left-radius: 10px;
-  border-left: 4px solid #9f9cc0;
+  border-top-right-radius: 10px;
+  border-bottom: 4px solid #9f9cc0;
 }
 .both {
   display: flex;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+  border-left: 4px solid #9f9cc0;
   width: 97%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   margin-bottom: 10px;
   border-bottom: 4px solid #9f9cc0;
+  flex-direction: column;
 }
 .both p {
   margin-top: auto;
@@ -57,6 +60,7 @@ p {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border-right: 4px solid #9f9cc0;
+  border-left: 4px solid #9f9cc0;
 }
 .melina p {
   margin-top: auto;
@@ -79,6 +83,7 @@ p {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   border-left: 4px solid #9f9cc0;
+  border-right: 4px solid #9f9cc0;
 }
 .abby p {
   margin-top: auto;
