@@ -14,23 +14,20 @@ body {
 }
 .both img {
   display: block;
-  width: 100%;
+  width: 50%;
   height: auto;
+  border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom: 4px solid #9f9cc0;
 }
 .both {
   display: flex;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
-  border-left: 4px solid #9f9cc0;
   width: 97%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   margin-bottom: 10px;
   border-bottom: 4px solid #9f9cc0;
-  flex-direction: column;
 }
 .both p {
   margin-top: auto;
@@ -92,6 +89,27 @@ p {
 }
 /* Media Query for Mobile Devices */
 @media (max-width: 767px) {
+  .both img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom: 4px solid #9f9cc0;
+  }
+  .both {
+    display: flex;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    border-left: 4px solid #9f9cc0;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #9f9cc0;
+    flex-direction: column;
+  }
   .both p {
     padding: 10px;
   }
@@ -268,6 +286,11 @@ p {
 @media (min-width: 768px) and (max-width: 1024px) {
   .both {
     height: 400px;
+  }
+  .both img {
+    width: 40%;
+    border-left: 4px solid #9f9cc0;
+    border-right: 4px solid #9f9cc0;
   }
   .abby {
     height: 400px;
@@ -550,6 +573,14 @@ p {
 }
 /* Media Query for Large screens */
 @media (min-width: 1025px) {
+  .both img {
+    width: 30%;
+    border-left: 4px solid #9f9cc0;
+    border-right: 4px solid #9f9cc0;
+  }
+  .both p {
+    padding: 20px;
+  }
   .logo-banner img {
     width: 100%;
     height: 100%;
