@@ -75,6 +75,12 @@ span {
   grid-row-start: 6;
   grid-row-end: 7;
 }
+.gallery_item-4 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 767px) {
   .logo-banner img {
@@ -418,8 +424,10 @@ span {
     grid-area: t;
   }
   .krispe {
-    grid-area: b;
-    margin-top: -50px;
+    grid-area: tt;
+  }
+  .marykra {
+    grid-area: bb;
   }
   .nodisplay {
     display: none;
@@ -441,6 +449,12 @@ span {
     height: auto;
     margin-right: 40%;
     margin-left: auto;
+  }
+  .gallery_item-4 {
+    width: 50%;
+    height: auto;
+    margin-right: auto;
+    margin-left: 40%;
   }
   .one {
     grid-area: t;
@@ -743,6 +757,12 @@ span {
     margin-right: auto;
   }
   .gallery_item-3 {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gallery_item-4 {
     width: 50%;
     height: auto;
     margin-left: auto;
