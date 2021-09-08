@@ -13,7 +13,10 @@ ul {
   list-style: none;
   margin-left: -20px;
 }
-
+.service img {
+  width: 100%;
+  height: auto;
+}
 li::before {
   content: '• ';
   color: #9f9cc0;
