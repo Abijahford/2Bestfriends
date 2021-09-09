@@ -574,7 +574,7 @@ p {
 /* Media Query for Large screens */
 @media (min-width: 1025px) {
   .both img {
-    width: 30%;
+    width: 40%;
     border-left: 4px solid #9f9cc0;
     border-right: 4px solid #9f9cc0;
   }
